@@ -1,0 +1,29 @@
+ Positioned(
+                                  bottom: 45,
+                                  left: 80,
+                                  child: SizedBox(
+                                    height: 18,
+                                    width: 18,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          boxShadow: [
+                                            BoxShadow(
+                                                color: Colors.grey
+                                                    .withOpacity(0.5),
+                                                blurRadius: 4,
+                                                spreadRadius: 2)
+                                          ],
+                                          shape: BoxShape.circle,
+                                          color: Colors.white),
+                                      child: Center(
+                                        child: Text(
+                                          count1.toString(),
+                                          style: const TextStyle(
+                                              fontSize: 12,
+                                              color: Colors.grey,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                )

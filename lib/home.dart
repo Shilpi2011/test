@@ -15,6 +15,7 @@ class _homeState extends State<home> {
   final listimages = [
     'assets/images/era.png',
   ];
+  int cartitem = 0;
   int count1 = 0,
       count2 = 0,
       count3 = 0,
@@ -938,6 +939,8 @@ class _homeState extends State<home> {
                                                       setState(() {
                                                         if (count1 > 0) {
                                                           count1 = count1 - 1;
+                                                          cartitem =
+                                                              cartitem - 1;
                                                         }
                                                       });
                                                     },
@@ -952,6 +955,8 @@ class _homeState extends State<home> {
                                                       setState(() {
                                                         if (count1 >= 0) {
                                                           count1 = count1 + 1;
+                                                          cartitem =
+                                                              cartitem + 1;
                                                         }
                                                       });
                                                     },
@@ -959,7 +964,7 @@ class _homeState extends State<home> {
                                                       CupertinoIcons
                                                           .plus_circle_fill,
                                                       color: Colors.black,
-                                                      size: 15,
+                                                      size: 18,
                                                     )),
                                               ],
                                             )
@@ -1123,6 +1128,8 @@ class _homeState extends State<home> {
                                                       setState(() {
                                                         if (count2 > 0) {
                                                           count2 = count2 - 1;
+                                                          cartitem =
+                                                              cartitem - 1;
                                                         }
                                                       });
                                                     },
@@ -1137,6 +1144,8 @@ class _homeState extends State<home> {
                                                       setState(() {
                                                         if (count2 >= 0) {
                                                           count2 = count2 + 1;
+                                                          cartitem =
+                                                              cartitem + 1;
                                                         }
                                                       });
                                                     },
@@ -1144,7 +1153,7 @@ class _homeState extends State<home> {
                                                       CupertinoIcons
                                                           .plus_circle_fill,
                                                       color: Colors.black,
-                                                      size: 15,
+                                                      size: 18,
                                                     )),
                                               ],
                                             )
@@ -1308,6 +1317,8 @@ class _homeState extends State<home> {
                                                       setState(() {
                                                         if (count3 > 0) {
                                                           count3 = count3 - 1;
+                                                          cartitem =
+                                                              cartitem - 1;
                                                         }
                                                       });
                                                     },
@@ -1322,6 +1333,8 @@ class _homeState extends State<home> {
                                                       setState(() {
                                                         if (count3 >= 0) {
                                                           count3 = count3 + 1;
+                                                          cartitem =
+                                                              cartitem + 1;
                                                         }
                                                       });
                                                     },
@@ -1329,7 +1342,7 @@ class _homeState extends State<home> {
                                                       CupertinoIcons
                                                           .plus_circle_fill,
                                                       color: Colors.black,
-                                                      size: 15,
+                                                      size: 18,
                                                     )),
                                               ],
                                             )
@@ -1493,6 +1506,8 @@ class _homeState extends State<home> {
                                                       setState(() {
                                                         if (count4 > 0) {
                                                           count4 = count4 - 1;
+                                                          cartitem =
+                                                              cartitem - 1;
                                                         }
                                                       });
                                                     },
@@ -1507,6 +1522,8 @@ class _homeState extends State<home> {
                                                       setState(() {
                                                         if (count4 >= 0) {
                                                           count4 = count4 + 1;
+                                                          cartitem =
+                                                              cartitem + 1;
                                                         }
                                                       });
                                                     },
@@ -1514,7 +1531,7 @@ class _homeState extends State<home> {
                                                       CupertinoIcons
                                                           .plus_circle_fill,
                                                       color: Colors.black,
-                                                      size: 15,
+                                                      size: 18,
                                                     )),
                                               ],
                                             )
@@ -1678,6 +1695,8 @@ class _homeState extends State<home> {
                                                       setState(() {
                                                         if (count5 > 0) {
                                                           count5 = count5 - 1;
+                                                          cartitem =
+                                                              cartitem - 1;
                                                         }
                                                       });
                                                     },
@@ -1692,6 +1711,8 @@ class _homeState extends State<home> {
                                                       setState(() {
                                                         if (count5 >= 0) {
                                                           count5 = count5 + 1;
+                                                          cartitem =
+                                                              cartitem + 1;
                                                         }
                                                       });
                                                     },
@@ -1699,7 +1720,7 @@ class _homeState extends State<home> {
                                                       CupertinoIcons
                                                           .plus_circle_fill,
                                                       color: Colors.black,
-                                                      size: 15,
+                                                      size: 18,
                                                     )),
                                               ],
                                             )
@@ -1923,6 +1944,8 @@ class _homeState extends State<home> {
                                                         setState(() {
                                                           if (count6 > 0) {
                                                             count6 = count6 - 1;
+                                                            cartitem =
+                                                                cartitem - 1;
                                                           }
                                                         });
                                                       },
@@ -1937,6 +1960,8 @@ class _homeState extends State<home> {
                                                         setState(() {
                                                           if (count6 >= 0) {
                                                             count6 = count6 + 1;
+                                                            cartitem =
+                                                                cartitem + 1;
                                                           }
                                                         });
                                                       },
@@ -1944,7 +1969,7 @@ class _homeState extends State<home> {
                                                         CupertinoIcons
                                                             .plus_circle_fill,
                                                         color: Colors.black,
-                                                        size: 15,
+                                                        size: 18,
                                                       )),
                                                 ],
                                               )
@@ -2112,6 +2137,8 @@ class _homeState extends State<home> {
                                                         setState(() {
                                                           if (count7 > 0) {
                                                             count7 = count7 - 1;
+                                                            cartitem =
+                                                                cartitem - 1;
                                                           }
                                                         });
                                                       },
@@ -2126,6 +2153,8 @@ class _homeState extends State<home> {
                                                         setState(() {
                                                           if (count7 >= 0) {
                                                             count7 = count7 + 1;
+                                                            cartitem =
+                                                                cartitem + 1;
                                                           }
                                                         });
                                                       },
@@ -2133,7 +2162,7 @@ class _homeState extends State<home> {
                                                         CupertinoIcons
                                                             .plus_circle_fill,
                                                         color: Colors.black,
-                                                        size: 15,
+                                                        size: 18,
                                                       )),
                                                 ],
                                               )
@@ -2301,6 +2330,8 @@ class _homeState extends State<home> {
                                                         setState(() {
                                                           if (count8 > 0) {
                                                             count8 = count8 - 1;
+                                                            cartitem =
+                                                                cartitem - 1;
                                                           }
                                                         });
                                                       },
@@ -2315,6 +2346,8 @@ class _homeState extends State<home> {
                                                         setState(() {
                                                           if (count8 >= 0) {
                                                             count8 = count8 + 1;
+                                                            cartitem =
+                                                                cartitem + 1;
                                                           }
                                                         });
                                                       },
@@ -2322,7 +2355,7 @@ class _homeState extends State<home> {
                                                         CupertinoIcons
                                                             .plus_circle_fill,
                                                         color: Colors.black,
-                                                        size: 15,
+                                                        size: 18,
                                                       )),
                                                 ],
                                               )
@@ -2490,6 +2523,8 @@ class _homeState extends State<home> {
                                                         setState(() {
                                                           if (count9 > 0) {
                                                             count9 = count9 - 1;
+                                                            cartitem =
+                                                                cartitem - 1;
                                                           }
                                                         });
                                                       },
@@ -2504,6 +2539,8 @@ class _homeState extends State<home> {
                                                         setState(() {
                                                           if (count9 >= 0) {
                                                             count9 = count9 + 1;
+                                                            cartitem =
+                                                                cartitem + 1;
                                                           }
                                                         });
                                                       },
@@ -2511,7 +2548,7 @@ class _homeState extends State<home> {
                                                         CupertinoIcons
                                                             .plus_circle_fill,
                                                         color: Colors.black,
-                                                        size: 15,
+                                                        size: 18,
                                                       )),
                                                 ],
                                               )
@@ -2680,6 +2717,8 @@ class _homeState extends State<home> {
                                                           if (count10 > 0) {
                                                             count10 =
                                                                 count10 - 1;
+                                                            cartitem =
+                                                                cartitem - 1;
                                                           }
                                                         });
                                                       },
@@ -2695,6 +2734,8 @@ class _homeState extends State<home> {
                                                           if (count10 >= 0) {
                                                             count10 =
                                                                 count10 + 1;
+                                                            cartitem =
+                                                                cartitem + 1;
                                                           }
                                                         });
                                                       },
@@ -2702,7 +2743,7 @@ class _homeState extends State<home> {
                                                         CupertinoIcons
                                                             .plus_circle_fill,
                                                         color: Colors.black,
-                                                        size: 15,
+                                                        size: 18,
                                                       )),
                                                 ],
                                               )
@@ -3356,6 +3397,8 @@ class _homeState extends State<home> {
                                                           if (count16 > 0) {
                                                             count16 =
                                                                 count16 - 1;
+                                                            cartitem =
+                                                                cartitem - 1;
                                                           }
                                                         });
                                                       },
@@ -3371,6 +3414,8 @@ class _homeState extends State<home> {
                                                           if (count16 >= 0) {
                                                             count16 =
                                                                 count16 + 1;
+                                                            cartitem =
+                                                                cartitem + 1;
                                                           }
                                                         });
                                                       },
@@ -3547,6 +3592,8 @@ class _homeState extends State<home> {
                                                           if (count12 > 0) {
                                                             count12 =
                                                                 count12 - 1;
+                                                            cartitem =
+                                                                cartitem - 1;
                                                           }
                                                         });
                                                       },
@@ -3562,6 +3609,8 @@ class _homeState extends State<home> {
                                                           if (count12 >= 0) {
                                                             count12 =
                                                                 count12 + 1;
+                                                            cartitem =
+                                                                cartitem + 1;
                                                           }
                                                         });
                                                       },
@@ -3738,6 +3787,8 @@ class _homeState extends State<home> {
                                                           if (count13 > 0) {
                                                             count13 =
                                                                 count13 - 1;
+                                                            cartitem =
+                                                                cartitem - 1;
                                                           }
                                                         });
                                                       },
@@ -3753,6 +3804,8 @@ class _homeState extends State<home> {
                                                           if (count13 >= 0) {
                                                             count13 =
                                                                 count13 + 1;
+                                                            cartitem =
+                                                                cartitem + 1;
                                                           }
                                                         });
                                                       },
@@ -3929,6 +3982,8 @@ class _homeState extends State<home> {
                                                           if (count14 > 0) {
                                                             count14 =
                                                                 count14 - 1;
+                                                            cartitem =
+                                                                cartitem - 1;
                                                           }
                                                         });
                                                       },
@@ -3944,6 +3999,8 @@ class _homeState extends State<home> {
                                                           if (count14 >= 0) {
                                                             count14 =
                                                                 count14 + 1;
+                                                            cartitem =
+                                                                cartitem + 1;
                                                           }
                                                         });
                                                       },
@@ -4120,6 +4177,8 @@ class _homeState extends State<home> {
                                                           if (count15 > 0) {
                                                             count15 =
                                                                 count15 - 1;
+                                                            cartitem =
+                                                                cartitem - 1;
                                                           }
                                                         });
                                                       },
@@ -4135,6 +4194,8 @@ class _homeState extends State<home> {
                                                           if (count15 >= 0) {
                                                             count15 =
                                                                 count15 + 1;
+                                                            cartitem =
+                                                                cartitem + 1;
                                                           }
                                                         });
                                                       },
@@ -4229,7 +4290,7 @@ class _homeState extends State<home> {
           selectedItemColor: const Color.fromRGBO(239, 78, 39, 1),
           showSelectedLabels: false,
           showUnselectedLabels: false,
-          items: const [
+          items: [
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
@@ -4240,7 +4301,21 @@ class _homeState extends State<home> {
             BottomNavigationBarItem(
                 icon: Icon(CupertinoIcons.calendar), label: 'calendra'),
             BottomNavigationBarItem(
-                icon: Icon(CupertinoIcons.cart_fill), label: 'cart'),
+                icon: Badge(
+                  badgeStyle: BadgeStyle(badgeColor: Colors.black38),
+                  position: BadgePosition.topEnd(top: -9, end: -8),
+                  badgeContent: Text(
+                    cartitem.toString(),
+                    style: TextStyle(
+                        fontSize: 8,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  child: Icon(
+                    CupertinoIcons.cart_fill,
+                  ),
+                ),
+                label: 'cart'),
             BottomNavigationBarItem(
                 icon: Icon(CupertinoIcons.person_fill), label: 'home')
           ],
