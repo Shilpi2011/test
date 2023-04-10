@@ -46,12 +46,8 @@ class _signupState extends State<signup> {
                       style: TextStyle(
                           fontSize: 25,
                           color: Colors.white,
-                          fontWeight: FontWeight.w600),
-                    )
-                  ],
-                ),
-              ])),
-          Positioned(
+                          fontWeight: FontWeight.w600),  )],),])),
+                 Positioned(
               top: 260,
               child: Container(
                 padding: const EdgeInsets.only(top: 18),
@@ -76,13 +72,9 @@ class _signupState extends State<signup> {
                             label: Text(
                               'First Name',
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.grey),
-                            )),
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 15,
-                    ),
+                                  TextStyle(fontSize: 18, color: Colors.grey),)),),),
+                           const SizedBox(
+                      height: 15,),
                     Padding(
                       padding: const EdgeInsets.only(left: 25, right: 25),
                       child: TextFormField(
@@ -95,13 +87,9 @@ class _signupState extends State<signup> {
                             label: Text(
                               'Last Name',
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.grey),
-                            )),
-                      ),
-                    ),
+                                  TextStyle(fontSize: 18, color: Colors.grey),)),),),
                     const SizedBox(
-                      height: 15,
-                    ),
+                      height: 15, ),
                     Padding(
                       padding: const EdgeInsets.only(left: 25, right: 25),
                       child: TextFormField(
@@ -114,13 +102,9 @@ class _signupState extends State<signup> {
                             label: Text(
                               'Email ID',
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.grey),
-                            )),
-                      ),
-                    ),
+                                  TextStyle(fontSize: 18, color: Colors.grey),)))),
                     const SizedBox(
-                      height: 15,
-                    ),
+                      height: 15,    ),
                     Padding(
                       padding: const EdgeInsets.only(left: 25, right: 25),
                       child: TextFormField(
@@ -193,13 +177,7 @@ class _signupState extends State<signup> {
                               Icon(
                                 CupertinoIcons.arrow_right,
                                 color: Colors.white,
-                                size: 25,
-                              )
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
+                                size: 25,)],)))),
                     const SizedBox(
                       height: 25,
                     ),

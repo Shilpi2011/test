@@ -45,14 +45,14 @@ class _homeState extends State<home> {
   bool selected8 = false;
   bool selected9 = false;
 
-  int firstindex = 0;
+int firstindex = 0;
 
-  int currentindex = 0;
-  int latestindex = 0;
-  bool currentstate = false;
+int currentindex = 0;
+int latestindex = 0;
+bool currentstate = false;
   final controller = PageController();
 
-  @override
+@override
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: false,
@@ -79,15 +79,15 @@ class _homeState extends State<home> {
                           color: Colors.white,
                           size: 26,
                         ),
-                        const SizedBox(
+                       const SizedBox(
                           width: 275,
                         ),
-                        const Icon(
+                       const Icon(
                           Icons.search,
                           color: Colors.white,
                           size: 26,
                         ),
-                        const SizedBox(
+                    const SizedBox(
                           width: 14,
                         ),
                         Badge(
@@ -147,11 +147,9 @@ class _homeState extends State<home> {
                           style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.w500,
-                              color: Colors.white),
-                        ),
+                              color: Colors.white),  ),
                         const SizedBox(
-                          width: 100,
-                        ),
+                          width: 100,  ),
                         Switch(
                             value: false,
                             onChanged: (value) {
@@ -161,14 +159,9 @@ class _homeState extends State<home> {
                             }),
                         const Text(
                           'veg',
-                          style: TextStyle(fontSize: 12, color: Colors.white),
-                        ),
-                      ],
-                    ),
-                  ),
+                          style: TextStyle(fontSize: 12, color: Colors.white),  ),],  ),  ),
                   const SizedBox(
-                    height: 10,
-                  ),
+                    height: 10,  ),
                   SizedBox(
                       height: 140,
                       width: double.infinity,
@@ -176,20 +169,15 @@ class _homeState extends State<home> {
                         itemCount: 4,
                         itemBuilder: (context, index, realIndex) {
                           final listimages = [index];
-                          return buildimage(toString(), index);
-                        },
+                          return buildimage(toString(), index);   },
                         options: CarouselOptions(
                             onPageChanged: (index, reason) {
                               setState(() {
                                 print(reason.toString());
-                                currentindex = index;
-                              });
-                            },
-                            autoPlay: false),
-                      )),
+                                currentindex = index; }); },
+                            autoPlay: false),),),
                   const SizedBox(
-                    height: 10,
-                  ),
+                    height: 10,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -202,19 +190,14 @@ class _homeState extends State<home> {
                               color: currentindex == i
                                   ? const Color.fromRGBO(255, 73, 18, 1)
                                   : const Color.fromRGBO(110, 110, 110, 1),
-                              shape: BoxShape.circle,
-                            ))
-                    ],
-                  ),
+                              shape: BoxShape.circle,),),],),
                   const SizedBox(
-                    height: 15,
-                  ),
+                    height: 15,),
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Padding(
                       padding: const EdgeInsets.only(
-                        left: 8,
-                      ),
+                        left: 8,),
                       child: Row(
                         children: [
                           GestureDetector(
@@ -260,25 +243,16 @@ class _homeState extends State<home> {
                                             bottomRight: Radius.circular(40))),
                                     child: Image.asset(
                                       'assets/images/fire.png',
-                                      scale: 3,
-                                    ),
-                                  ),
-                                ),
+                                      scale: 3,),),),
                                 const SizedBox(
-                                  height: 10,
-                                ),
+                                  height: 10,),
                                 Text(
                                   'Popular',
                                   style: TextStyle(
                                     fontSize: 13,
                                     color: selected1
                                         ? const Color.fromRGBO(255, 73, 18, 1)
-                                        : Colors.grey,
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
+                                        : Colors.grey,),),]),),
                           GestureDetector(
                             onTap: (() {
                               setState(() {
@@ -291,10 +265,7 @@ class _homeState extends State<home> {
                                   selected6 = false;
                                   selected7 = false;
                                   selected8 = false;
-                                  selected9 = false;
-                                });
-                              });
-                            }),
+                                  selected9 = false;     });     });     }),
                             child: Column(
                               children: [
                                 Padding(
@@ -324,25 +295,16 @@ class _homeState extends State<home> {
                                             bottomRight: Radius.circular(40))),
                                     child: Image.asset(
                                       'assets/images/MicrosoftTeams-image (20).png',
-                                      scale: 3,
-                                    ),
-                                  ),
-                                ),
+                                      scale: 3,  ),  ),  ),
                                 const SizedBox(
-                                  height: 10,
-                                ),
+                                  height: 10,  ),
                                 Text(
                                   'Western',
                                   style: TextStyle(
                                     fontSize: 13,
                                     color: selected2
-                                        ? Color.fromRGBO(255, 73, 18, 1)
-                                        : Colors.grey,
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
+                                        ? const Color.fromRGBO(255, 73, 18, 1)
+                                        : Colors.grey,  ),  ),]  ),  ),
                           GestureDetector(
                             onTap: (() {
                               setState(() {
@@ -355,10 +317,7 @@ class _homeState extends State<home> {
                                   selected6 = false;
                                   selected7 = false;
                                   selected8 = false;
-                                  selected9 = false;
-                                });
-                              });
-                            }),
+                                  selected9 = false; });     });     }),
                             child: Column(
                               children: [
                                 Padding(
@@ -388,26 +347,16 @@ class _homeState extends State<home> {
                                             bottomRight: Radius.circular(40))),
                                     child: Image.asset(
                                       'assets/images/drinks.png',
-                                      scale: 3,
-                                    ),
-                                  ),
-                                ),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                Text(
+                                      scale: 3,  ),  ),  ),
+                               const SizedBox( height: 10,),
+                              Text(
                                   'Drinks',
                                   style: TextStyle(
                                     fontSize: 13,
                                     color: selected3
-                                        ? Color.fromRGBO(255, 73, 18, 1)
-                                        : Colors.grey,
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                          GestureDetector(
+                                        ? const Color.fromRGBO(255, 73, 18, 1)
+                                        : Colors.grey,))])),
+                             GestureDetector(
                             onTap: () {
                               setState(() {
                                 selected4 = true;
@@ -439,7 +388,7 @@ class _homeState extends State<home> {
                                               spreadRadius: 2)
                                         ],
                                         color: selected4
-                                            ? Color.fromRGBO(255, 92, 51, 1)
+                                            ? const Color.fromRGBO(255, 92, 51, 1)
                                             : const Color.fromRGBO(
                                                 255, 255, 255, 1),
                                         borderRadius: const BorderRadius.only(
@@ -461,7 +410,7 @@ class _homeState extends State<home> {
                                   style: TextStyle(
                                       fontSize: 13,
                                       color: selected4
-                                          ? Color.fromRGBO(255, 92, 51, 1)
+                                          ? const Color.fromRGBO(255, 92, 51, 1)
                                           : Colors.grey),
                                 )
                               ],
@@ -559,7 +508,7 @@ class _homeState extends State<home> {
                                               spreadRadius: 2)
                                         ],
                                         color: selected6
-                                            ? Color.fromRGBO(255, 92, 51, 1)
+                                            ? const Color.fromRGBO(255, 92, 51, 1)
                                             : const Color.fromRGBO(
                                                 255, 255, 255, 1),
                                         borderRadius: const BorderRadius.only(
@@ -581,7 +530,7 @@ class _homeState extends State<home> {
                                   style: TextStyle(
                                     fontSize: 13,
                                     color: selected6
-                                        ? Color.fromRGBO(255, 92, 51, 1)
+                                        ? const Color.fromRGBO(255, 92, 51, 1)
                                         : Colors.grey,
                                   ),
                                 )
@@ -4291,7 +4240,7 @@ class _homeState extends State<home> {
           showSelectedLabels: false,
           showUnselectedLabels: false,
           items: [
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
               ),
@@ -4302,7 +4251,7 @@ class _homeState extends State<home> {
                 icon: Icon(CupertinoIcons.calendar), label: 'calendra'),
             BottomNavigationBarItem(
                 icon: Badge(
-                  badgeStyle: BadgeStyle(badgeColor: Colors.black38),
+                  badgeStyle: const BadgeStyle(badgeColor: Colors.black38),
                   position: BadgePosition.topEnd(top: -9, end: -8),
                   badgeContent: Text(
                     cartitem.toString(),
